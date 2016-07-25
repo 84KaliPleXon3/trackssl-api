@@ -37,6 +37,7 @@ $app->get('/certificate/{domain}', function (Request $request, Response $respons
             "type" => "certificate",
             "id" => $domain,
             "attributes" => [
+                "requestedAt" => (new DateTime())->format('r'),
                 "name" => $sslCert->certName(),
                 "validFrom" => $sslCert->validFrom()->format('r'),
                 "validTo" => $sslCert->validTo()->format('r'),
