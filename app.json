@@ -1,0 +1,6 @@
+{
+  "name": "Track SSL API",
+  "description": "An API for reading SSL certificates",
+  "repository": "https://github.com/punkstar/trackssl-api",
+  "addons": []
+}
