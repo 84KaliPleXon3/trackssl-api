@@ -5,6 +5,21 @@ use Punkstar\Ssl\Reader;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
+$app->get('/', function (Request $request, Response $response) {
+
+    $documentation = [
+        "type" => "documentation",
+        "attributes" => [
+            "href" => "https://github.com/punkstar/trackssl-api/wiki/Documentation"
+        ]
+    ];
+
+    return $response->withJson([
+        "data" => [$documentation],
+        "errors" => []
+    ]);
+});
+
 $app->get('/certificate/{domain}', function (Request $request, Response $response) {
     $domain = $request->getAttribute('domain');
 
