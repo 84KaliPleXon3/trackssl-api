@@ -290,21 +290,21 @@
         },
         {
             "name": "punkstar/ssl",
-            "version": "0.3.1",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/punkstar/ssl.git",
-                "reference": "e4100b76f560ee618bc6e80e845c5ea901ef6306"
+                "reference": "4d90e6fa07b1f983c7060091e89620b96697af04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/punkstar/ssl/zipball/e4100b76f560ee618bc6e80e845c5ea901ef6306",
-                "reference": "e4100b76f560ee618bc6e80e845c5ea901ef6306",
+                "url": "https://api.github.com/repos/punkstar/ssl/zipball/4d90e6fa07b1f983c7060091e89620b96697af04",
+                "reference": "4d90e6fa07b1f983c7060091e89620b96697af04",
                 "shasum": ""
             },
             "require": {
                 "lib-openssl": "*",
-                "php": ">=5.6"
+                "php": "^7.0"
             },
             "require-dev": {
                 "php-vfs/php-vfs": "^1.3",
@@ -334,7 +334,7 @@
             "keywords": [
                 "ssl"
             ],
-            "time": "2016-09-16 11:00:50"
+            "time": "2017-03-18 08:21:09"
         },
         {
             "name": "slim/php-view",
