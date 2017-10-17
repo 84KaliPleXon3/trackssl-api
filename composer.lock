@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8f601ac4959e194ca9cfdb6ad70cdcf1",
-    "content-hash": "673c8f97ff9776c0529d38100627cd77",
+    "hash": "7fb967db670cca5c4b409db9eb636dbd",
+    "content-hash": "0d633debd52d1023c63dc7304b5e518a",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -357,16 +357,16 @@
         },
         {
             "name": "punkstar/ssl",
-            "version": "0.4.0",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/punkstar/ssl.git",
-                "reference": "7fcc870de018ba4eab0088fb253317423f66afab"
+                "reference": "4aea99fc3eff4f0c16173c7f1273f50e884b576f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/punkstar/ssl/zipball/7fcc870de018ba4eab0088fb253317423f66afab",
-                "reference": "7fcc870de018ba4eab0088fb253317423f66afab",
+                "url": "https://api.github.com/repos/punkstar/ssl/zipball/4aea99fc3eff4f0c16173c7f1273f50e884b576f",
+                "reference": "4aea99fc3eff4f0c16173c7f1273f50e884b576f",
                 "shasum": ""
             },
             "require": {
@@ -401,7 +401,7 @@
             "keywords": [
                 "ssl"
             ],
-            "time": "2017-07-24 18:04:56"
+            "time": "2017-10-17 00:09:40"
         },
         {
             "name": "slim/php-view",

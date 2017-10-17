@@ -2,6 +2,7 @@
 // Routes
 
 use Punkstar\Ssl\Reader;
+use Punkstar\Ssl\Validator\CommonNameValidator;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
@@ -32,6 +33,7 @@ $app->get('/certificate/{domain}', function (Request $request, Response $respons
     try {
         $sslReader = new Reader();
         $sslCert = $sslReader->readFromUrl(sprintf("https://%s", $domain));
+        $commonNameValidator = new CommonNameValidator($sslCert);
 
         $certificate = [
             "type" => "certificate",
@@ -44,7 +46,8 @@ $app->get('/certificate/{domain}', function (Request $request, Response $respons
                 "subject" => $sslCert->subject(),
                 "issuer" => $sslCert->issuer(),
                 "sans" => $sslCert->sans(),
-                "cert" => $sslCert->toString()
+                "cert" => $sslCert->toString(),
+                "validCommonName" => $commonNameValidator->isValid($domain)
             ]
         ];
 
